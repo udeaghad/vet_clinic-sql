@@ -20,3 +20,11 @@ INSERT INTO ANIMALS VALUES
 UPDATE ANIMALS
 SET DATE_OF_BIRTH = 'JUN 12, 2005'
 WHERE ID = 8;
+
+update animals
+set species = 'digimon'
+where name like '%mon';
+ 
+update animals
+set species = 'pokemon'
+where not species = 'digimon';
