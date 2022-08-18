@@ -28,3 +28,43 @@ where name like '%mon';
 update animals
 set species = 'pokemon'
 where not species = 'digimon';
+
+INSERT INTO OWNERS(FULL_NAME, AGE)
+VALUES('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+INSERT INTO SPECIES(NAME)
+VALUES ('Pokemon'),
+('Digimon');
+
+UPDATE ANIMALS
+SET SPECIES_ID = 2
+WHERE NAME LIKE '%mon';
+
+UPDATE ANIMALS
+SET SPECIES_ID = 1
+WHERE NOT NAME LIKE '%mon';
+
+UPDATE ANIMALS
+SET OWNER_ID = 1
+WHERE NAME IN ('Agumon');
+
+UPDATE ANIMALS
+SET OWNER_ID = 2
+WHERE NAME IN ('Gabumon','Pikachu');
+
+UPDATE ANIMALS
+SET OWNER_ID = 3
+WHERE NAME IN ('Devimon','Plantmon');
+
+UPDATE ANIMALS
+SET OWNER_ID = 4
+WHERE NAME IN ('Charmander','Squirtle','Blossom');
+
+UPDATE ANIMALS
+SET OWNER_ID = 5
+WHERE NAME IN ('Angemon','Boarmon');
