@@ -68,3 +68,36 @@ WHERE NAME IN ('Charmander','Squirtle','Blossom');
 UPDATE ANIMALS
 SET OWNER_ID = 5
 WHERE NAME IN ('Angemon','Boarmon');
+
+INSERT INTO VETS(NAME, AGE, DATE_OF_GRADUATION)
+VALUES ('William Tatcher', 45, 'Apr 23, 2000'),
+('Maisy Smith', 26, 'Jan 17, 2019'),
+('Stephanie Mendez', 64, 'May 4, 1981'),
+('Jack Harkness', 38, 'Jun 8, 2008');
+
+INSERT INTO SPECIALIZATION(SPECIES_ID, VETS_ID)
+VALUES(1,1),
+(1,3),
+(2,4);
+
+INSERT INTO VISITS(ANIMALS_ID, VETS_ID, DATE_OF_VISIT)
+VALUES(1,1, 'MAY 24, 2020'),
+(1, 3, 'JUL 22, 2020'),
+(2, 4, 'FEB 02,2021'),
+(3, 2, 'JAN 05, 2020'),
+(3, 2, 'MAR 08, 2020'),
+(3, 2, 'MAY 14, 2020'),
+(4, 3, 'MAY 04, 2021'),
+(5, 4, 'FEB 24, 2021'),
+(6, 2, 'DEC 21, 2019'),
+(6, 1, 'AUG 10, 2020'),
+(6, 2, 'APR 07, 2021'),
+(7, 3, 'SEP 29, 2019'),
+(8, 4, 'OCT 03, 2020'),
+(8, 4, 'NOV 04, 2020'),
+(9, 2, 'JAN 24, 2019'),
+(9, 2, 'MAY 15, 2019'),
+(9, 2, 'FEB 27, 2020'),
+(9, 2, 'AUG 03, 2020'),
+(10, 3, 'MAY 24, 2020'),
+(10, 1, 'JAN 11, 2021');
