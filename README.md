@@ -5,6 +5,9 @@
 ## Built With
 
 - PostgreSQL
+## Schema
+
+![drawSQL-export-2022-08-23_13_59](https://user-images.githubusercontent.com/88520952/186165020-2d9c312b-584d-4425-aca7-32c555b11d22.png)
 
 
 ## Getting Started
